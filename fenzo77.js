@@ -1190,7 +1190,7 @@ case 'hanzo': case 'prp': case 'inventori': case 'profile':{
         	break
  
 case 'list': case 'menu': case 'help': case '?': {
-                let bnrr = [{
+                let anu = [{
                                 urlButton: {
                                     displayText: 'Source Code',
                                     url: 'https://github.com/Lexxy24/KaguraMD'
@@ -1216,8 +1216,8 @@ case 'list': case 'menu': case 'help': case '?': {
                                     id: 'hanzo'
                                 }
                             }]
-                        mans.send5ButImg(listmn, `© Created By Lexxy Official`, mans.user.name, global.thumb, bnrr)
-                        }
+mans.send5ButImg(m.chat, anu, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, btn)
+}
         	break
 case 'grupbot':
 case 'groupbot':
