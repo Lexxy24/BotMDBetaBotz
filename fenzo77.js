@@ -99,6 +99,7 @@ let _sewa = require("./lib/sewa");
 const sewa = JSON.parse(fs.readFileSync('./database/sewa.json'));
 
 // UCAPAN WAKTU ( FenZo||77+)
+const salam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 const ucap = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
 const qris = 'https://telegra.ph/file/0b4c0cf58301ec7c73a70.jpg'
@@ -1134,7 +1135,10 @@ const jumlahUser = pendaftar.length
   if (!isInventory){ addInventori(m.sender) }
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
   
-const listmn = `
+const listmn = `Selamat ${salam} ${pushname} 👋
+Saya *${namebot}*, Assisten *Lexxy Official* Bot Ini Adalah Beta Multi-Device WhatsApp.
+Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
+─────────────
 ❏ *Info User*
 > Username : *${pushname}!*
 > Limit User : *${global.db.users[m.sender].limit}*
