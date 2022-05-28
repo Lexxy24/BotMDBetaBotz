@@ -3887,7 +3887,7 @@ if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
 mans.public = true
 m.reply('Sukse Change To Public Usage')
-mans.setStatus(`Mode : Public Created By Relz`)
+mans.setStatus(`Mode : Public Created By Lexxy`)
 }
 break
 case 'setstatut':
@@ -3900,7 +3900,7 @@ if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
 mans.public = false
 m.reply('Sukses Change To Self Usage')
-mans.setStatus(`Mode : Self Created By Relz`)
+mans.setStatus(`Mode : Self Created By Lexxy`)
 }
 break
 case 'speed':case 'ping': case 'botstatus': case 'statusbot': {
