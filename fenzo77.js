@@ -1167,7 +1167,7 @@ case 'donasi': case 'donate':{
 mans.sendMessage(from, {image:{url:qris}, caption:`${require('./help/help.js').donate(prefix, l, pushname)}`}, {quoted:m})
 }
 break
-case 'prp': case 'inventori': case 'profile':{
+case 'hanzo': case 'prp': case 'inventori': case 'profile':{
   if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
   if (!isInventory){ addInventori(m.sender) }
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
@@ -1192,29 +1192,28 @@ case 'prp': case 'inventori': case 'profile':{
 case 'list': case 'menu': case 'help': case '?': {
                 let bnrr = [{
                                 urlButton: {
-                                    displayText: 'SOURCE CODE',
+                                    displayText: 'Source Code',
                                     url: 'https://github.com/Lexxy24/KaguraMD'
                                 }
-                            },
-                            {
-                                callButton: {
-                                    displayText: 'OWNER BOT',
-                                    phoneNumber: ' +62 822-7991-5237'
-                                }
                             }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: '+62 822-7991-5237'
+                                }
+                            },{
                                 quickReplyButton: {
-                                    displayText: 'STATUS BOT',
+                                    displayText: 'Status Bot',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'CREATOR BOT',
+                                    displayText: 'Contact Owner',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'INFO PROFILE',
-                                    id: 'prp'
+                                    displayText: 'Info Profile',
+                                    id: 'hanzo'
                                 }
                             }]
                         mans.send5ButImg(listmn, `© Created By Lexxy Official`, mans.user.name, global.thumb, bnrr)
@@ -2582,7 +2581,7 @@ if (!args.join(" ")) return m.reply(`Text mana?\n\nExample : ${prefix + command}
                             }, {
                                 quickReplyButton: {
                                     displayText: 'PROFILE',
-                                    id: 'profile'
+                                    id: 'hanzo'
                                 }
                             }]
                       let txt = `「 Broadcast Bot 」\n\n${text}`
