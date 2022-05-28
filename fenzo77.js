@@ -3056,7 +3056,7 @@ m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 ├  DAN RATUSAN FITUR LAINYA
 ╰────
 ╭─[ *MINAT CHAT* ]
-├  🪀 wa.me/6285745409270?text=sewa+bot
+├  🪀 wa.me/6282279915237?text=sewa+bot
 ╰────
 ╭─[ *TES BOT? CHAT NOMER DI BAWAH* ]
 ├ Wa.me/6285789004732
