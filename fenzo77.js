@@ -3059,7 +3059,7 @@ m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 ├  🪀 wa.me/6285745409270?text=sewa+bot
 ╰────
 ╭─[ *TES BOT? CHAT NOMER DI BAWAH* ]
-├ Wa.me//+62881-6988-639
+├ Wa.me/6285789004732
 ╰────
 ╭─[ *PAYMENT* ]
 ├  GOPAY
@@ -3076,7 +3076,7 @@ m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 ╰────
 ╭─ [ FASILITAS ]
 ├  CUMA SCAN QR DOANG JADI                
-│     BOT + OWNER
+│    BOT + OWNER
 ├  DI RUN DI RDP BUKAN HEROKU
 ├  FITUR BOT NYA BANYAK
 ├  BANYAK FITUR LANGKA
@@ -3088,7 +3088,7 @@ m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 │     DLL DI GANTI JADI TERSERAH LU
 ╰────
 ╭─[ *MINAT CHAT* ]
-├  🪀 wa.me/6285745409270?text=jadi+bot
+├  🪀 wa.me/6282279915237?text=jadi+bot
 ╰────
 
 
@@ -3106,7 +3106,7 @@ m.reply(`*BOT ON 24 JAM & BISA BUAT PRICELIST*
 ├  BISA OPEN MURID 
 ╰────
 ╭─[ *MINAT CHAT* ]
-├  🪀 wa.me/6285745409270?text=join+murid+bot
+├  🪀 wa.me/6282279915237?text=join+murid+bot
 ╰────`)
 break
 case 'antilink': {
