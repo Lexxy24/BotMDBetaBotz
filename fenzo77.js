@@ -1196,11 +1196,7 @@ case 'list': case 'menu': case 'help': case '?': {
                                     url: 'https://github.com/Lexxy24/KaguraMD'
                                 }
                             },
-                            urlButton: {
-                                    displayText: 'GROUP BOT',
-                                    url: 'https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG'
-                                }
-                            }, {
+                            {
                                 callButton: {
                                     displayText: 'OWNER BOT',
                                     phoneNumber: ' +62 822-7991-5237'
