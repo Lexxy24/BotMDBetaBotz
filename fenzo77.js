@@ -1167,7 +1167,7 @@ case 'donasi': case 'donate':{
 mans.sendMessage(from, {image:{url:qris}, caption:`${require('./help/help.js').donate(prefix, l, pushname)}`}, {quoted:m})
 }
 break
-case 'me': case 'inventori': case 'profile':{
+case 'prp': case 'inventori': case 'profile':{
   if (!isDarah){ addInventoriDarah(m.sender, DarahAwal) }
   if (!isInventory){ addInventori(m.sender) }
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
@@ -1213,13 +1213,12 @@ case 'list': case 'menu': case 'help': case '?': {
                             }, {
                                 quickReplyButton: {
                                     displayText: 'PROFILE',
-                                    id: 'profile'
+                                    id: 'prp'
                                 }
                             }]
-                        mans.send5ButImg(m.chat, listmn, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, btn)
-                     }
-                     break
-
+                        mans.sendMessage(m.chat, { caption: listmn, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© LexxyBotMD', templateButtons: btn, footer: `© Created By Lexxy Official`, mentions: [m.sender] })
+        	}
+        	break
 case 'grupbot':
 case 'groupbot':
 case 'botgrup':
