@@ -2553,46 +2553,44 @@ mans.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quot
 }
 break
 case 'bc': case 'broadcast': case 'bcall': {
-if (isBan) return m.reply(mess.ban)
 if (!isCreator) return ads(mess.owner)
 if (!args.join(" ")) return m.reply(`Text mana?\n\nExample : ${prefix + command} LoL`)
-let anu = await store.chats.all().map(v => v.id)
-ads(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 1.5} detik`)
-for (let yoi of anu) {
-await sleep(1500)
-let btn = [{
-urlButton: {
-displayText: 'Source Code',
-url: 'ga Ada dek'
-}
-}, {
-urlButton: {
-displayText: 'Group Whatsapp',
-url: linkgrupss
-}
-}, {
-quickReplyButton: {
-displayText: 'Status Bot',
-id: '#ping'
-}
-}, {
-quickReplyButton: {
-displayText: 'Contact Owner',
-id: '#owner'
-}  
-}, {
-quickReplyButton: {
-displayText: 'Script',
-id: '#sc'
-}
-}]
-let txt = `*「 Broadcast」*\n\n${text}`
-mans.send5ButImg(yoi, txt, "© LoL", log0, btn, thum)
-}
-ads('Sukses Broadcast')
-}
-addCmd(command.slice(1), 1, commund)
-break
+                let anu = await store.chats.all().map(v => v.id)
+                m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 1.5} detik`)
+		for (let yoi of anu) {
+		    await sleep(1500)
+		    let btn = [{
+                                urlButton: {
+                                    displayText: 'Source Code',
+                                    url: 'https://github.com/Lexxy24/KaguraMD'
+                                }
+                            }, {
+                                callButton: {
+                                    displayText: 'Number Phone Owner',
+                                    phoneNumber: ' +62 822-7991-5237'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Status Bot',
+                                    id: 'ping'
+                                }
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'Contact Owner',
+                                    id: 'owner'
+                                }  
+                            }, {
+                                quickReplyButton: {
+                                    displayText: 'List Menu',
+                                    id: 'fiturlist'
+                                }
+                            }]
+                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      mans.send5ButImg(yoi, txt, mans.user.name, global.thumb, btn)
+		}
+		m.reply('Sukses Broadcast')
+            }
+            break
 case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh': {
 if (isBan) return m.reply(mess.ban)
 if (!m.quoted && !args.join(" ")) return m.reply(`Kirim/reply text dengan caption ${prefix + command}`)
