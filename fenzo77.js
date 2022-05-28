@@ -1092,7 +1092,7 @@ message: {
 } 
 //FAKEREPLY TEXT WITH THUMBNAIL
 const fakey = (teks) => {
-            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Jadi Hengker 😎`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/CQBTr7KmpBy3NRjNGZVbmQ"}}}, { quoted: m})
+            mans.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `Join Jadi Hengker 😎`,"body": `Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./media/fenzo.jpg`),"sourceUrl": "https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG"}}}, { quoted: m})
         }
 const ftextt = {
 key: { 
@@ -1180,12 +1180,12 @@ case 'me': case 'inventori': case 'profile':{
      teksehmazeh += `*Role* : ${role}\n`
      teksehmazeh += `*Level* : ${getLevelingLevel(m.sender)}`
      let butRun = [
-        	{ urlButton: { displayText: `Group WhatsApp`, url : `https://chat.whatsapp.com/CQBTr7KmpBy3NRjNGZVbmQ` } },
+        	{ urlButton: { displayText: `Group WhatsApp`, url : `https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG` } },
         	{ urlButton: { displayText: `Instagram`, url : `https://Instagram.com/relzz_brembo` } },
-            { urlButton: { displayText: `☎️Contact Me`, url: `+62 857-4540-9270` } },
+            { urlButton: { displayText: `☎️Contact Me`, url: `+62 857-8900-4732` } },
             { quickReplyButton: { displayText: `🏧 leaderboard`, id: 'leaderboard'} }
         	]
-        	mans.sendMessage(m.chat, { caption: teksehmazeh, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© RelzLoL', templateButtons: butRun, footer: `ingin Berpetualang Lagi`, mentions: [m.sender] })
+        	mans.sendMessage(m.chat, { caption: teksehmazeh, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© LexxyBotMD', templateButtons: butRun, footer: `ingin Berpetualang Lagi`, mentions: [m.sender] })
         	}
         	break
  
@@ -1212,8 +1212,8 @@ case 'list': case 'menu': case 'help': case '?': {
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Group Bot',
-                                    id: 'botgrup'
+                                    displayText: 'Profile',
+                                    id: 'profile'
                                 }
                             }]
                         mans.send5ButImg(m.chat, listmn, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, btn)
@@ -1223,7 +1223,7 @@ case 'list': case 'menu': case 'help': case '?': {
 case 'grupbot':
 case 'groupbot':
 case 'botgrup':
-fakey(`https://chat.whatsapp.com/CQBTr7KmpBy3NRjNGZVbmQ`)
+fakey(`https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG`)
 break
 case 'getscmd': {
 if (isBan) return m.reply(mess.ban)
