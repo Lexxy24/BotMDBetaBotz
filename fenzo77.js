@@ -1190,34 +1190,39 @@ case 'prp': case 'inventori': case 'profile':{
         	break
  
 case 'list': case 'menu': case 'help': case '?': {
-                let btn = [{
+                let bnrr = [{
                                 urlButton: {
-                                    displayText: 'SCRIPT',
+                                    displayText: 'SOURCE CODE',
                                     url: 'https://github.com/Lexxy24/KaguraMD'
+                                }
+                            },
+                            urlButton: {
+                                    displayText: 'GROUP BOT',
+                                    url: 'https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG'
                                 }
                             }, {
                                 callButton: {
-                                    displayText: 'OWNER',
+                                    displayText: 'OWNER BOT',
                                     phoneNumber: ' +62 822-7991-5237'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'STATUS',
+                                    displayText: 'STATUS BOT',
                                     id: 'ping'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'CREATOR',
+                                    displayText: 'CREATOR BOT',
                                     id: 'owner'
                                 }  
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'PROFILE',
+                                    displayText: 'INFO PROFILE',
                                     id: 'prp'
                                 }
                             }]
-                        mans.sendMessage(m.chat, { caption: listmn, document: { url: 'https://fatiharridho.my.id/database/islam/juz-amma-arab-latin-indonesia.pptx' }, mimetype: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', fileName: '© LexxyBotMD', templateButtons: btn, footer: `© Created By Lexxy Official`, mentions: [m.sender] })
-        	}
+                        mans.send5ButImg(listmn, `© Created By Lexxy Official`, mans.user.name, global.thumb, bnrr)
+                        }
         	break
 case 'grupbot':
 case 'groupbot':
