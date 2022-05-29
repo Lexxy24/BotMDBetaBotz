@@ -1202,7 +1202,8 @@ case 'hanzo': case 'prp': case 'inventori': case 'profile':{
         	break
  
 case 'list': case 'menu': case 'help': case '?': {
-                let anu = [{
+let txtf =`© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`
+                let kontol = [{
                                 urlButton: {
                                     displayText: 'Source Code',
                                     url: 'https://github.com/Lexxy24/KaguraMD'
@@ -1228,7 +1229,7 @@ case 'list': case 'menu': case 'help': case '?': {
                                     id: 'hanzo'
                                 }
                             }]
-mans.send5ButImg(m.chat, listmn, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, anu)
+mans.send5ButImg(m.chat, listmn, txtf, global.thumb, kontol)
 }
         	break
 case 'grupbot':
@@ -1237,7 +1238,7 @@ case 'botgrup':
 fakey(`https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG`)
 break
 case 'limit':
-fakey(`Limit Anda : *${global.db.users[m.sender].limit}*`)
+fakey(`*Limit Anda : ${global.db.users[m.sender].limit}*`)
 break
 case 'getscmd': {
 if (isBan) return m.reply(mess.ban)
