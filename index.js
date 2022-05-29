@@ -161,7 +161,7 @@ GBye = await getBuffer(`https://hardianto.xyz/api/tools/leave?nama=${encodeURICo
 	for (let i of kon) {
 	    list.push({
 	    	displayName: await mans.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await mans.getName(i + '@s.whatsapp.net')}\nFN:${await mans.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:LolRelz@gmail.com@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://instagram.com/relz\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await mans.getName(i + '@s.whatsapp.net')}\nFN:${await mans.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:pebrikito0@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://github.com/Lexxy24\nitem3.X-ABLabel:Instagram\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
 	    })
 	}
 	mans.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
