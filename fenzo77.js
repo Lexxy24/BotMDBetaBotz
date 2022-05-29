@@ -1237,7 +1237,7 @@ case 'botgrup':
 fakey(`https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG`)
 break
 case 'limit':
-fakey(`*${global.db.users[m.sender].limit}*`)
+fakey(`Limit Anda : *${global.db.users[m.sender].limit}*`)
 break
 case 'getscmd': {
 if (isBan) return m.reply(mess.ban)
