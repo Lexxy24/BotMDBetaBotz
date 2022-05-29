@@ -1238,7 +1238,7 @@ case 'botgrup':
 fakey(`https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG`)
 break
 case 'limit':
-fakey(`*Limit Anda : ${global.db.users[m.sender].limit}*`)
+fakey(`*Sisa Limit Anda : ${global.db.users[m.sender].limit}*`)
 break
 case 'getscmd': {
 if (isBan) return m.reply(mess.ban)
@@ -3022,7 +3022,7 @@ m.reply('autostickerpc nonaktif')
 break
 case 'sewad':
 if (!isCreator) return m.reply(mess.owner)
-if (!q) return m.reply(`Penggunaan :\n*${prefix}sewa* add/del waktu`)
+if (!q) return m.reply(`Penggunaan :\n*${prefix}sewad* add/del waktu`)
 if (args[0] === 'add'){
 _sewa.addSewaGroup(from, args[1], sewa)
 m.reply(`Success`)
@@ -3031,16 +3031,12 @@ sewa.splice(_sewa.getSewaPosition(from, sewa), 1)
 fs.writeFileSync('./database/sewa.json', JSON.stringify(sewa))
 reply(mess.success)
 } else {
-m.reply(`Penggunaan :\n*${prefix}sewa* add/del waktu`)}
+m.reply(`Penggunaan :\n*${prefix}sewad* add/del waktu`)}
 break
 case 'sewalist': 
 case 'listsewa':
-let txtnyee = `List Sewa\nJumlah : ${sewa.length}\n\n`
-for (let i of sewa){
 let cekvippsewa = ms(i.expired - Date.now())
-txtnyee += `*ID :* ${i.id} \n*Expire :* ${cekvippsewa.days} day(s) ${cekvippsewa.hours} hour(s) ${cekvippsewa.minutes} minute(s) ${cekvipp.seconds} second(s)\n\n`
-}
-m.reply(txtnyee)
+fakey(`List Sewa\nJumlah : ${sewa.length}\n\n*ID :* ${i.id} \n*Expire :* ${cekvippsewa.days} day(s) ${cekvippsewa.hours} hour(s) ${cekvippsewa.minutes} minute(s) ${cekvipp.seconds} second(s)\n\n`)
 break
 case 'sewacheck':
 case 'ceksewa': 
