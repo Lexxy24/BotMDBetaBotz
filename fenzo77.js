@@ -1202,7 +1202,6 @@ case 'hanzo': case 'prp': case 'inventori': case 'profile':{
         	break
  
 case 'list': case 'menu': case 'help': case '?': {
-let txtf =`© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`
                 let kontol = [{
                                 urlButton: {
                                     displayText: 'Source Code',
@@ -1229,7 +1228,7 @@ let txtf =`© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖�
                                     id: 'hanzo'
                                 }
                             }]
-mans.send5ButImg(m.chat, listmn, txtf, global.thumb, kontol)
+mans.send5ButImg(m.chat, listmn, `© 𝘊𝘳𝘦𝘢𝘵𝘦𝘥 𝘉𝘺 𝘓𝘦𝘹𝘹𝘺 𝘖𝘧𝘧𝘪𝘤𝘪𝘢𝘭`, global.thumb, kontol)
 }
         	break
 case 'grupbot':
@@ -3036,7 +3035,8 @@ break
 case 'sewalist': 
 case 'listsewa':
 let cekvippsewa = ms(i.expired - Date.now())
-fakey(`List Sewa\nJumlah : ${sewa.length}\n\n*ID :* ${i.id} \n*Expire :* ${cekvippsewa.days} day(s) ${cekvippsewa.hours} hour(s) ${cekvippsewa.minutes} minute(s) ${cekvipp.seconds} second(s)\n\n`)
+let listsewa = `List Sewa\nJumlah : ${sewa.length}\n\n*ID :* ${i.id} \n*Expire :* ${cekvippsewa.days} day(s) ${cekvippsewa.hours} hour(s) ${cekvippsewa.minutes} minute(s) ${cekvipp.seconds} second(s)\n\n`
+m.reply(listsewa)
 break
 case 'sewacheck':
 case 'ceksewa': 
