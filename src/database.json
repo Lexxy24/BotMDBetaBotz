@@ -703,7 +703,7 @@
     "6281256023873@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": null
+      "limit": "Infinity"
     },
     "6281261836971@s.whatsapp.net": {
       "afkTime": -1,
@@ -728,12 +728,12 @@
     "6285789004732@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": null
+      "limit": "Infinity"
     },
     "6282279915237@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": null
+      "limit": "Infinity"
     }
   }
 }
