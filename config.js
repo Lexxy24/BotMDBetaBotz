@@ -6,7 +6,7 @@ global.thum = "https://telegra.ph/file/7188012d573871aaf4fa0.jpg"
 global.log0 = fs.readFileSync("./media/fenzo.jpg")
 global.thumb = fs.readFileSync("./media/fenzo.jpg")
 global.err4r = "https://telegra.ph/file/7188012d573871aaf4fa0.jpg"
-global.owner = ['6282279915237']
+global.owner = ['6282279915237','6281256023873']
 global.lolhuman = "RelzzAPIs"
 global.rkyt = []
 global.banUser = ['6281366679021@s.whatsapp.net']
@@ -17,7 +17,7 @@ global.packname = "© Lexxy||18+🇲🇨\nim Form Indonesia "
 global.packname2 = "LordLexxy😎"
 global.author = "LexxyDev"
 global.sessionName = "session"
-global.namebot = "NeoBotz"
+global.namebot = "RissBotz"
 global.linkgrupss = "https://chat.whatsapp.com/E3zewfxrc5pKE6Rzb3BuqG"
 global.antitags = true
 global.prefa = ['','!','.','🐦','🐤','🗿']
@@ -35,7 +35,7 @@ global.mess = {
 }
 global.limitawal = {
     premium: "Infinity",
-    free: 50,
+    free: 20,
     monayawal: 1000
 }
    global.rpg = {
@@ -48,7 +48,7 @@ global.limitawal = {
 }
 global.limitawal = {
     rakyat: "Infinity",
-    free: 50
+    free: 20
 }
 // Beli Di Zenz Yo
 global.APIs = {
